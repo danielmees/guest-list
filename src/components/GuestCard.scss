@@ -1,0 +1,70 @@
+.guest-card {
+  display: flex;
+  padding: 15px 0;
+  border-top: 1px solid rgba(0, 0, 0, .08);
+  border-bottom: 1px solid rgba(0, 0, 0, .08);
+
+  img {
+    width: 100px;
+    height: 100px;
+    @media only screen and (min-width: 768px) {
+      width: 25%;
+      height: auto;
+    }
+  }
+
+  .guest-info {
+    box-sizing: border-box;
+    font-size: 14px;
+    width: calc(100% - 200px);
+    padding: 0 0 0 20px;
+
+    @media only screen and (min-width: 768px) {
+      padding: 20px 0 0 20px;
+      width: 75%;
+    }
+
+    .name {
+      margin-bottom: 5px;
+      font-size: 18px;
+      font-weight: 500;
+      color: #247f9e;
+    }
+
+    .tags {
+      margin-bottom: 20px;
+      padding: 0;
+
+      li {
+        display: inline-block;
+        list-style-type: none;
+        margin-right: 10px;
+        margin-bottom: 5px;
+        padding: 4px 12px;
+        font-size: 12px;
+        background-color: #fcf1ee;
+        font-weight: 500;
+        border-radius: 10px;
+      }
+    }
+
+    .email-city {
+      display: flex;
+      justify-content: space-between;
+
+      .email{
+        width: 60%;
+        text-align: left;
+      }
+
+      .city {
+        width: 40%;
+        text-align: right;
+      }
+    }
+
+    .visit-info {
+      font-weight: 700;
+    }
+  }
+}
