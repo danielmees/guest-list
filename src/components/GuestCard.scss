@@ -16,7 +16,7 @@
   .guest-info {
     box-sizing: border-box;
     font-size: 14px;
-    width: calc(100% - 200px);
+    width: calc(100% - 100px);
     padding: 0 0 0 20px;
 
     @media only screen and (min-width: 768px) {
@@ -32,7 +32,7 @@
     }
 
     .tags {
-      margin-bottom: 20px;
+      margin-bottom: 10px;
       padding: 0;
 
       li {
@@ -46,25 +46,42 @@
         font-weight: 500;
         border-radius: 10px;
       }
+
+      @media only screen and (min-width: 768px) {
+        margin-bottom: 20px;
+      }
     }
 
     .email-city {
-      display: flex;
+      display: block;
       justify-content: space-between;
 
-      .email{
-        width: 60%;
+      .email, .city{
+        margin: 5px 0;
         text-align: left;
       }
 
-      .city {
-        width: 40%;
-        text-align: right;
+      @media only screen and (min-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+
+        .email, .city{
+          width: 60%;
+          text-align: left;
+        }
+  
+        .city {
+          width: 40%;
+          text-align: right;
+        }
       }
     }
 
     .visit-info {
       font-weight: 700;
+      background: #fceeef;
+      border-radius: 4px;
+      padding: 10px 16px;
     }
   }
 }
